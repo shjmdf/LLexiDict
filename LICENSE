@@ -125,6 +125,7 @@ Under the folder `generate/latin/`, there are multiple data and database files:
 2. 'dcc-latin-core-list.csv'
 3. 'latin_data_cleaned.csv'
 
+## PART 5A: LATIN VOCABULARY LIST (CC-BY-SA)
 The Latin vocabulary list files (`dcc-latin-core-list.csv` and its derivation `latin_data_cleaned.csv`) are based on data compiled by the repository `sjhuskey/latin-vocabulary`.
 
 - Repository Source: https://github.com/sjhuskey/latin-vocabulary
@@ -134,3 +135,6 @@ The Latin vocabulary list files (`dcc-latin-core-list.csv` and its derivation `l
 This data is used in this repository under the terms of the CC BY-SA license.
 
 See: http://creativecommons.org/licenses/
+
+## PART 5B: LATIN DICTIONARY DATABASE (CC-BY-SA)
+This data is used in this repository under the terms of the CC BY-SA license. Therefore, the generated database file `latin_dictionary.db` is also licensed under the Creative Commons Attribution-ShareAlike Unported License (CC BY-SA).

@@ -52,12 +52,67 @@ Their approach to **building a scientific English learning platform based on LLM
 Remained to be added...
 ### LLM Providers
 Remained to be added...
-## ⚖️ License
-This project is distributed under a dual-license model:
 
-**Code**: All software code is licensed under the **MIT License**.
+## LICENSE & ATTRIBUTION
 
-**Data**: All generated dictionary data and curated content are licensed under the **Creative Commons Attribution 4.0 (CC BY 4.0)**.
+**This repository uses a mixed licensing model. Please read the following carefully.**
+
+### PART 1: SOURCE CODE (MIT LICENSE)
+
+All source code, scripts (e.g., Python files in `generate/`, etc.), and project configuration files created by Xie Hurui(shjmdf) are licensed under the MIT License.
+
+Copyright (c) 2025 Xie Hurui(shjmdf)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---
+
+### PART 2: ENGLISH DATA (CC-BY-SA 3.0)
+
+**Files:** `english-dictionary.db`, `wiki-100k.txt`, `frequency.txt`, etc.
+
+* **Frequency Data:** Derived from Peter Norvig's public domain corpus.
+* **Word List:** Derived from Wiktionary (CC-BY-SA 3.0).
+* **Database License:** The generated database `english-dictionary.db` is licensed under **CC-BY-SA 3.0**.
+
+**Usage:** You are free to use and distribute commercially, provided you attribute the source and distribute modifications under the same license.
+
+---
+
+### PART 3: FRENCH DATA (CC-BY-NC 4.0 - NON-COMMERCIAL)
+
+**Files:** `french_dictionary.db`, `Lexique383.tsv`, etc.
+
+* **Source:** Lexique 3.83 (Boris New & Christophe Pallier).
+* **License:** Creative Commons Attribution-NonCommercial 4.0 International (CC-BY-NC 4.0).
+
+**⚠️ RESTRICTION:** These files and the generated database may **NOT** be used for commercial purposes.
+
+---
+
+### PART 4: JAPANESE DATA (CC-BY-NC 4.0 - NON-COMMERCIAL)
+
+**Files:** `japanese_dictionary.db`, `jp-clean.txt`, `jlpt-clean.txt`, etc.
+
+* **JLPT List:** Sourced from `jlpt-word-list` (MIT) / Tanos (CC-BY).
+* **JPDB List:** Sourced from `yomitan-dictionaries` / jpdb.io (Third-party asset).
+* **Database License:** Due to the mixed nature and inclusion of third-party statistical data, the generated database `japanese_dictionary.db` is licensed under **CC-BY-NC 4.0**.
+
+**⚠️ RESTRICTION:** You may **NOT** use the Japanese database for commercial purposes.
+
+---
+
+### PART 5: LATIN DATA (CC-BY-SA)
+
+**Files:** `latin_dictionary.db`, `dcc-latin-core-list.csv`.
+
+* **Source:** Based on `latin-vocabulary` repository and Dickinson College Commentaries (DCC).
+* **License:** Creative Commons Attribution-ShareAlike (CC BY-SA).
+* **Database License:** The generated database `latin_dictionary.db` is licensed under **CC BY-SA**.
 
 [![GitHub license](https://img.shields.io/badge/license-MIT%20%26%20CC--BY-blue.svg)](https://github.com/shjmdf/LLexiDict/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
