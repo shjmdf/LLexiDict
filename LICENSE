@@ -1,0 +1,136 @@
+**This repository uses a mixed licensing model. Please read the following carefully.**
+
+# PART 1: SOURCE CODE (MIT LICENSE)
+
+All source code, scripts (e.g., Python files in `generate/`, etc.), and project
+configuration files created by Xie Hurui(shjmdf) are licensed under the MIT License.
+
+Copyright (c) 2025 Xie Hurui(shjmdf)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+# PART 2: ENGLISH DATA (Mixed LICENSES)
+
+Under the folder `generate/english/`, there are 5 data and database files:
+1. 'frequency.txt'
+2. 'count_1w_20k_english_clean.txt'
+3. 'wiki-100k.txt'
+4. 'wiki-100k-clean.txt'
+5. 'english-dictionary.db'
+
+## PART 2A: FREQUENCY DATA (PUBLIC DOMAIN)
+The file `count_1w.txt` (here renamed as `frequency.txt` and derived `count_1w_20k_english_clean.txt`) is obtained from Peter Norvig's "Natural Language Corpus Data" collection, created for the book "Beautiful Data" (O'Reilly, 2009).
+
+Source: https://norvig.com/ngrams/
+Original Data Source: Google Web Trillion Word Corpus (Linguistic Data Consortium)
+
+Acknowledgment:
+These files are distributed by Peter Norvig and are widely used for educational and research purposes. While the accompanying code is explicitly MIT licensed, the data is provided as a collection of n-gram counts derived from public corpora.
+
+## PART 2B: WIKTIONARY DATA (CC-BY-SA 3.0)
+The file `wiki-100k.txt` (and `wiki-100k-clean.txt`) included in this repository is obtained from a compilation by GitHub user 'h3xx'.
+
+Source: https://gist.github.com/h3xx/197621
+Original Data Source: Wiktionary (http://en.wiktionary.org/)
+
+License:
+Since this data is derived from Wiktionary, it is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License (CC-BY-SA 3.0).
+
+See: http://creativecommons.org/licenses/by-sa/3.0/
+
+This repository uses a component-based licensing model.
+Please respect the specific license of each component.
+
+## PART 2C: ENGLISH DICTIONARY DATABASE (CC-BY-SA 3.0)
+The database file `english-dictionary.db` is generated using the above two data sources: frequency data from Peter Norvig and word list from Wiktionary.
+Therefore, the database file `english-dictionary.db` is licensed under the Creative Commons Attribution-
+ShareAlike 3.0 Unported License (CC-BY-SA 3.0).
+
+You are free to use and distribute it commercially, provided you:
+1. Attribute the source.
+2. Distribute any modifications under the same CC-BY-SA license.
+
+
+# PART 3: FRENCH DATA (CC-BY-NC 4.0 NON-COMMERCIAL)
+
+Under the folder `generate/francais/`, there are multiple data and database files:
+1. 'french_dictionary.db'
+2. 'Lexique383.tsv'
+3. 'list_french.txt'
+   
+The dictionary databases and assets for FRENCH are **ALL** derived from:
+- Lexique 3.83 (by Boris New & Christophe Pallier)
+- See http://www.lexique.org/
+
+
+Due to the inclusion of Lexique data, the FRENCH database file is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC-BY-NC 4.0).
+
+⚠️ RESTRICTION: The French data files usually found in `generate/francais/` may NOT be used for commercial purposes without permission from the original authors of Lexique.
+
+See: https://creativecommons.org/licenses/by-nc/4.0/
+
+# PART 4: JAPANESE DATA (MIXED LICENSES)
+
+Under the folder `generate/japanese/`, there are multiple data and database files:
+1. 'japanese_dictionary.db'
+2. 'jlpt-clean.txt'
+3. 'all.csv'
+4. 'jp-clean.txt'
+5. 'jpdb-clean.txt'
+
+## PART 4A: JLPT WORD LIST (MIT LICENSE)
+The core vocabulary lists (see `all.csv` and 'jlpt-clean.txt') are obtained from the `jlpt-word-list` repository by GitHub user 'elzup'.
+
+- Source: https://github.com/elzup/jlpt-word-list
+- Repository License: MIT License
+- Original Data Source: http://www.tanos.co.uk/jlpt/
+- Original Data License: Creative Commons Attribution (CC-BY)
+
+Attribution Chain:
+This dataset is forked from `open-anki-jlpt-decks` (jamsinclair) <- `jlpt-anki-decks`
+(chyyran) <- https://tanos.co.uk/jlpt/.
+
+## PART 4B: JPDB WORD LIST (Third-Party Asset)
+The file `jpdb-clean.txt` (derived from `jpdb_v2.2_freq_list_2024-10-13.csv` ) is obtained from the `yomitan-dictionaries` collection by Kuuuube.
+
+- Compiler: Kuuuube (https://github.com/Kuuuube/yomitan-dictionaries)
+- Original Source: jpdb.io (https://jpdb.io/)
+- Nature of Data: Statistical frequency data derived/scraped from the JPDB corpus.
+
+License Note:
+This file is provided as a community resource. The underlying corpus data
+belongs to jpdb.io. This project uses this file strictly for statistical
+frequency ranking and does not claim ownership of the data.
+
+Users of this repository should be aware that this specific frequency list
+is a third-party asset and may be subject to the terms of service of jpdb.io.
+
+## PART 4C: JAPANESE DICTIONARY DATABASE AND MIXED DATA (NON-COMMERCIAL)
+The mixed data file `jp-clean.txt` is generated by combining entries from both the JLPT word list and the JPDB frequency list.
+The database file `japanese_dictionary.db` is generated using the above two data sources: JLPT word list from `jlpt-word-list` and frequency data from `yomitan-dictionaries`.
+Therefore, the database file `japanese_dictionary.db` and the `jp-clean.txt` file are licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC-BY-NC 4.0).
+
+You are free to use and distribute this database non-commercially, provided you:
+1. Attribute all sources (Wiktionary, elzup, Kuuuube, jpdb.io).
+2. Distribute any modifications under the same CC-BY-NC license.
+3. Do NOT use this database for commercial purposes.
+
+See: https://creativecommons.org/licenses/by-nc/4.0/
+
+# PART 5: LATIN DATA (CC-BY-SA)
+Under the folder `generate/latin/`, there are multiple data and database files:
+1. 'latin_dictionary.db'
+2. 'dcc-latin-core-list.csv'
+3. 'latin_data_cleaned.csv'
+
+The Latin vocabulary list files (`dcc-latin-core-list.csv` and its derivation `latin_data_cleaned.csv`) are based on data compiled by the repository `sjhuskey/latin-vocabulary`.
+
+- Repository Source: https://github.com/sjhuskey/latin-vocabulary
+- Original Data Source: Dickinson College Commentaries (DCC) Latin Core Vocabulary list.
+- Original Data License: Creative Commons Attribution-ShareAlike Unported License (CC BY-SA).
+
+This data is used in this repository under the terms of the CC BY-SA license.
+
+See: http://creativecommons.org/licenses/
